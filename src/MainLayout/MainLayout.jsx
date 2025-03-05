@@ -5,7 +5,9 @@ export const MainLayout = () => {
   return (
     <div className="bg-yellow-100/50 min-h-screen">
       <Navbar />
-      <Outlet />
+      <section className="px-6">
+        <Outlet />
+      </section>
     </div>
   );
 };
