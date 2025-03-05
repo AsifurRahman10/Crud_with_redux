@@ -3,6 +3,7 @@ import { MainLayout } from "../MainLayout/MainLayout";
 import { AddBooks } from "../features/books/AddBooks";
 import { BooksView } from "../features/books/BooksView";
 import { Home } from "../Component/Home";
+import { EditBooks } from "../features/books/EditBooks";
 
 export const Router = () => {
   return (
@@ -12,6 +13,7 @@ export const Router = () => {
         <Route index element={<Home />} />
         <Route path="add-books" element={<AddBooks />} />
         <Route path="show-books" element={<BooksView />} />
+        <Route path="edit-books" element={<EditBooks />} />
       </Route>
     </Routes>
   );
